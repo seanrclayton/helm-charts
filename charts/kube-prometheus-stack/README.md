@@ -20,6 +20,12 @@ helm repo update
 
 _See [`helm repo`](https://helm.sh/docs/helm/helm_repo/) for command documentation._
 
+## Install the Required Custom Resource Definitions
+
+```console
+kubectl apply -f https://raw.githubusercontent.com/prometheus-community/helm-charts/main/charts/kube-prometheus-stack/crds/crd-servicemonitors.yaml
+```
+
 ## Install Helm Chart
 
 ```console
